@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: #111113;
+  font-family: "Roboto", sans-serif;
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  display: grid;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  body {
+    min-height: 90vh;
+  }
+}
+
+main {
+  align-self: end;
+  justify-self: center;
+}
+
+.hide {
+  display: none;
+}
+
+#time {
+  display: flex;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+.color path {
+  fill: hsl(194deg, 100%, 63%);
+}
+
+.card {
+  background: hsla(194deg, 100%, 63%, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vh, 10.8rem);
+  border-radius: 9999px;
+}
+
+footer {
+  align-self: end;
+  justify-self: end;
+  padding: 0 4rem 3.2rem 0;
+}/*# sourceMappingURL=style.css.map */
