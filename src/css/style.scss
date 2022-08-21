@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+
+@import "partials/colors";
+@import "partials/typography";
+
+body {
+    background: $bg-color;
+
+    font-family: $font-body;
+    font-size: $size-body;
+    font-weight: $weight-body;
+    line-height: $line-height-body;
+
+    color: $text-color;
+
+    display: grid;
+    min-height: 100vh;
+
+    @media (max-width: 768px) {
+        min-height: 90vh;
+    }
+        
+    
+}
+
+main{
+    align-self: end;
+    justify-self: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+#time {
+    display: flex;
+}
+
+button {
+    background: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
+    svg{
+        width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+    }
+}
+
+.color {
+    path {
+        fill: $prymary-color;
+    }
+}
+
+.card {
+    background: $prymary-color-light;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem, 5rem + 10vh, 10.8rem);
+
+    border-radius: 9999px;
+}
+
+footer{
+    align-self: end;
+    justify-self: end;
+
+    padding: 0 4rem 3.2rem 0;
+}
