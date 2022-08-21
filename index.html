@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Time</title>
+    <script src="src/js/svg-inject.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="time" id="time">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div class="card" id="controls">
+                <button id="play">
+                    <img src="src/svg/play.svg" alt="Botão circular com símbolo de play" onload="SVGInject(this)">
+                </button>
+                <button id="pause" class="hide">
+                    <img src="src/svg/pause.svg" alt="Botão circular com símbolo de pause" onload="SVGInject(this)">
+                </button>
+                <button id="stop" class="hide">
+                    <img src="src/svg/stop.svg" alt="Botão circular com símbolo de stop" onload="SVGInject(this)">
+                </button>
+                <button id="set">
+                    <img src="src/svg/set.svg" alt="Botão circular com símbolo de set" onload="SVGInject(this)">
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button id="sound-on">
+            <img src="src/svg/sound-on.svg" alt="Botão circular com símbolo de som ligado" onload="SVGInject(this)">
+        </button>
+        <button id="sound-off" class="hide">
+            <img src="src/svg/sound-off.svg" alt="Botão circular com símbolo de som desligado" onload="SVGInject(this)">
+        </button>
+    </footer>
+    <script src="src/js/index.js" type="module"></script>
+</body>
+</html>
